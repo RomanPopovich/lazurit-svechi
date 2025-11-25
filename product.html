@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luzurit-Svechi | Щелкунчик</title>
+        <link rel="stylesheet" href="./assets/bundle.css">
+    </head>
+    <body class="light">
+        <header class="header light">
+            <div class="header__container container">
+                <div class="header__wrapper">
+                    <search role="search" class="search">
+                        <form action="" method="GET" class="search__form">
+                            <input
+                                type="search"
+                                id="search-input"
+                                required=""
+                                placeholder="поиск по сайту"
+                                class="search__input"
+                                value=""
+                            >
+                            <button type="submit" class="search__btn" id="search-btn">
+                                <svg
+                                    width="1em"
+                                    height="1em"
+                                    viewBox="0 0 29 29"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="search__icon"
+                                >
+                                    <path d="M11 0C17.0751 0 22 4.92487 22 11C22 13.5716 21.1143 15.9345 19.6357 17.8076L28.707 26.8789C29.0975 27.2694 29.0975 27.9025 28.707 28.293C28.3165 28.6834 27.6835 28.6834 27.293 28.293L18.2598 19.2598C16.3224 20.9639 13.783 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0ZM11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2Z" fill="black"></path>
+                                </svg>
+                            </button>
+                        </form>
+                    </search>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    <svg
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 50 50"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="header__icon"
+                                    >
+                                        <path d="M25.9707 8.26459C31.0419 0.393353 39.7465 -2.33345 45.4131 2.17474C51.0797 6.68319 51.5625 16.7194 46.4912 24.5908C45.8066 25.6534 45.0545 26.6212 44.2539 27.4911L25.917 49.5497C25.4174 50.1502 24.563 50.1503 24.0635 49.5497L5.52051 27.2421C4.80414 26.4375 4.12874 25.553 3.50879 24.5908C-1.56249 16.7194 -1.07966 6.68319 4.58691 2.17474C10.2535 -2.33345 18.9581 0.393354 24.0293 8.26459C24.3796 8.80835 24.7026 9.36286 25 9.92474C25.2974 9.36286 25.6204 8.80835 25.9707 8.26459Z" fill="#E26567"></path>
+                                    </svg>
+                                </a>
+                                <span class="header__item--quantity light">10</span>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link light">
+                                    <svg
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 42 36"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="header__icon"
+                                    >
+                                        <path d="M16.6328 25.8037C17.8284 25.6052 19.0681 25.7071 20.1943 26.0967C21.3206 26.4863 22.2827 27.1467 22.96 27.9932C23.6373 28.8397 23.999 29.8345 23.999 30.8525C23.9973 32.2173 23.348 33.5262 22.1924 34.4912C21.0367 35.4562 19.4693 35.9986 17.835 36C16.6158 36 15.4239 35.6984 14.4102 35.1328C13.3964 34.5672 12.6062 33.7628 12.1396 32.8223C11.6732 31.8818 11.5513 30.847 11.7891 29.8486C12.0269 28.8501 12.6145 27.9328 13.4766 27.2129C14.3386 26.4931 15.4371 26.0023 16.6328 25.8037ZM32.3301 25.8037C33.5257 25.6051 34.7653 25.7072 35.8916 26.0967C37.018 26.4863 37.9809 27.1467 38.6582 27.9932C39.3355 28.8396 39.6973 29.8345 39.6973 30.8525C39.6956 32.2173 39.0453 33.5262 37.8896 34.4912C36.7341 35.456 35.1673 35.9985 33.5332 36C32.3141 36 31.122 35.6983 30.1084 35.1328C29.0947 34.5672 28.3045 33.7628 27.8379 32.8223C27.3714 31.8818 27.2495 30.8471 27.4873 29.8486C27.7251 28.8502 28.3118 27.9328 29.1738 27.2129C30.0359 26.493 31.1344 26.0023 32.3301 25.8037ZM17.835 28.3926C17.2521 28.3926 16.6819 28.5372 16.1973 28.8076C15.7128 29.0781 15.3353 29.4625 15.1123 29.9121C14.8893 30.3618 14.8305 30.8566 14.9443 31.334C15.0581 31.8114 15.3397 32.2496 15.752 32.5938C16.1642 32.9378 16.6891 33.1727 17.2607 33.2676C17.8324 33.3624 18.4254 33.3133 18.9639 33.127C19.5022 32.9405 19.9625 32.6245 20.2861 32.2197C20.6097 31.815 20.7824 31.3392 20.7822 30.8525C20.7814 30.2002 20.4705 29.5745 19.918 29.1133C19.3654 28.6521 18.6162 28.3931 17.835 28.3926ZM33.5332 28.3926C32.9503 28.3926 32.3802 28.5372 31.8955 28.8076C31.4109 29.0781 31.0326 29.4624 30.8096 29.9121C30.5867 30.3617 30.5288 30.8567 30.6426 31.334C30.7564 31.8113 31.0371 32.2497 31.4492 32.5938C31.8615 32.9379 32.3872 33.1727 32.959 33.2676C33.5305 33.3623 34.1229 33.3132 34.6611 33.127C35.1996 32.9406 35.6597 32.6245 35.9834 32.2197C36.3071 31.8149 36.4797 31.3393 36.4795 30.8525C36.4786 30.2002 36.1686 29.5745 35.6162 29.1133C35.0638 28.6521 34.3143 28.3931 33.5332 28.3926ZM7.86133 0C8.19885 9.67811e-05 8.52797 0.0890658 8.80176 0.253906C9.07554 0.418804 9.28004 0.651501 9.38672 0.918945L12.1445 7.83496H40.3896C40.6316 7.83459 40.8707 7.87936 41.0889 7.9668C41.3072 8.05432 41.4994 8.18276 41.6504 8.34082C41.8011 8.49872 41.9072 8.68299 41.9609 8.87988C42.0147 9.07705 42.0142 9.28242 41.96 9.47949L38.25 22.9551C38.1691 23.2518 37.9693 23.5162 37.6846 23.7061C37.3997 23.8959 37.0461 23.9999 36.6816 24H14.6826C14.3177 24.0004 13.9631 23.8969 13.6777 23.707C13.3925 23.5172 13.1933 23.252 13.1123 22.9551L9.41699 9.5127L6.69629 2.68652H1.6084C1.18185 2.68647 0.772324 2.54483 0.470703 2.29297C0.169373 2.04119 0.000147835 1.69971 0 1.34375C0 0.987618 0.169228 0.645443 0.470703 0.393555C0.772324 0.141689 1.18185 5.49728e-05 1.6084 0H7.86133ZM15.9639 21.3135H35.4014L38.3691 10.5244H12.9951L15.9639 21.3135Z" fill="#3A2619"></path>
+                                    </svg>
+                                </a>
+                                <span class="header__item--quantity light">10</span>
+                            </li>
+                            <button class="header__btn light" type="button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </ul>
+                    </nav>
+                </div>
+                <aside class="header__menu">
+                    <nav class="header__menu--nav">
+                        <ul class="header__menu--list">
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link false">Главная</a>
+                            </li>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link false">Блог</a>
+                            </li>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link false">Товары</a>
+                            </li>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link false">Формованные</a>
+                            </li>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link false">Аромантические</a>
+                            </li>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link false">Диффузоры</a>
+                            </li>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link false">Аромасаше</a>
+                            </li>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link false">Сезонные свечи</a>
+                            </li>
+                        </ul>
+                        <ul class="header__menu--list">
+                            <li class="header__menu--item">
+                                <a class="header__menu--btn header__menu--btn--heart" href="#">
+                                    <span class="header__menu--btn--text">МОЁ ИЗБРАННОЕ</span>
+                                    <svg
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 50 50"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="header__menu--icon"
+                                    >
+                                        <path d="M25.9707 8.26459C31.0419 0.393353 39.7465 -2.33345 45.4131 2.17474C51.0797 6.68319 51.5625 16.7194 46.4912 24.5908C45.8066 25.6534 45.0545 26.6212 44.2539 27.4911L25.917 49.5497C25.4174 50.1502 24.563 50.1503 24.0635 49.5497L5.52051 27.2421C4.80414 26.4375 4.12874 25.553 3.50879 24.5908C-1.56249 16.7194 -1.07966 6.68319 4.58691 2.17474C10.2535 -2.33345 18.9581 0.393354 24.0293 8.26459C24.3796 8.80835 24.7026 9.36286 25 9.92474C25.2974 9.36286 25.6204 8.80835 25.9707 8.26459Z" fill="#E26567"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__menu--item">
+                                <a class="header__menu--btn header__menu--btn--baskets" href="#">
+                                    <span class="header__menu--btn--text">В КОРЗИНУ</span>
+                                    <svg
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 42 36"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="header__menu--icon"
+                                    >
+                                        <path d="M16.6328 25.8037C17.8284 25.6052 19.0681 25.7071 20.1943 26.0967C21.3206 26.4863 22.2827 27.1467 22.96 27.9932C23.6373 28.8397 23.999 29.8345 23.999 30.8525C23.9973 32.2173 23.348 33.5262 22.1924 34.4912C21.0367 35.4562 19.4693 35.9986 17.835 36C16.6158 36 15.4239 35.6984 14.4102 35.1328C13.3964 34.5672 12.6062 33.7628 12.1396 32.8223C11.6732 31.8818 11.5513 30.847 11.7891 29.8486C12.0269 28.8501 12.6145 27.9328 13.4766 27.2129C14.3386 26.4931 15.4371 26.0023 16.6328 25.8037ZM32.3301 25.8037C33.5257 25.6051 34.7653 25.7072 35.8916 26.0967C37.018 26.4863 37.9809 27.1467 38.6582 27.9932C39.3355 28.8396 39.6973 29.8345 39.6973 30.8525C39.6956 32.2173 39.0453 33.5262 37.8896 34.4912C36.7341 35.456 35.1673 35.9985 33.5332 36C32.3141 36 31.122 35.6983 30.1084 35.1328C29.0947 34.5672 28.3045 33.7628 27.8379 32.8223C27.3714 31.8818 27.2495 30.8471 27.4873 29.8486C27.7251 28.8502 28.3118 27.9328 29.1738 27.2129C30.0359 26.493 31.1344 26.0023 32.3301 25.8037ZM17.835 28.3926C17.2521 28.3926 16.6819 28.5372 16.1973 28.8076C15.7128 29.0781 15.3353 29.4625 15.1123 29.9121C14.8893 30.3618 14.8305 30.8566 14.9443 31.334C15.0581 31.8114 15.3397 32.2496 15.752 32.5938C16.1642 32.9378 16.6891 33.1727 17.2607 33.2676C17.8324 33.3624 18.4254 33.3133 18.9639 33.127C19.5022 32.9405 19.9625 32.6245 20.2861 32.2197C20.6097 31.815 20.7824 31.3392 20.7822 30.8525C20.7814 30.2002 20.4705 29.5745 19.918 29.1133C19.3654 28.6521 18.6162 28.3931 17.835 28.3926ZM33.5332 28.3926C32.9503 28.3926 32.3802 28.5372 31.8955 28.8076C31.4109 29.0781 31.0326 29.4624 30.8096 29.9121C30.5867 30.3617 30.5288 30.8567 30.6426 31.334C30.7564 31.8113 31.0371 32.2497 31.4492 32.5938C31.8615 32.9379 32.3872 33.1727 32.959 33.2676C33.5305 33.3623 34.1229 33.3132 34.6611 33.127C35.1996 32.9406 35.6597 32.6245 35.9834 32.2197C36.3071 31.8149 36.4797 31.3393 36.4795 30.8525C36.4786 30.2002 36.1686 29.5745 35.6162 29.1133C35.0638 28.6521 34.3143 28.3931 33.5332 28.3926ZM7.86133 0C8.19885 9.67811e-05 8.52797 0.0890658 8.80176 0.253906C9.07554 0.418804 9.28004 0.651501 9.38672 0.918945L12.1445 7.83496H40.3896C40.6316 7.83459 40.8707 7.87936 41.0889 7.9668C41.3072 8.05432 41.4994 8.18276 41.6504 8.34082C41.8011 8.49872 41.9072 8.68299 41.9609 8.87988C42.0147 9.07705 42.0142 9.28242 41.96 9.47949L38.25 22.9551C38.1691 23.2518 37.9693 23.5162 37.6846 23.7061C37.3997 23.8959 37.0461 23.9999 36.6816 24H14.6826C14.3177 24.0004 13.9631 23.8969 13.6777 23.707C13.3925 23.5172 13.1933 23.252 13.1123 22.9551L9.41699 9.5127L6.69629 2.68652H1.6084C1.18185 2.68647 0.772324 2.54483 0.470703 2.29297C0.169373 2.04119 0.000147835 1.69971 0 1.34375C0 0.987618 0.169228 0.645443 0.470703 0.393555C0.772324 0.141689 1.18185 5.49728e-05 1.6084 0H7.86133ZM15.9639 21.3135H35.4014L38.3691 10.5244H12.9951L15.9639 21.3135Z" fill="#3A2619"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </header>
+        <main>
+            <div class="container product-page" id="nutcracker">
+                <section class="product-page__header">
+                    <nav class="product-page__header--nav">
+                        <ul class="product-page__header--list">
+                            <li class="product-page__header--item">
+                                <a href="#" class="product-page__header--link light">главная</a>
+                            </li>
+                            <li class="product-page__header--item">
+                                <a href="#" class="product-page__header--link light">товары</a>
+                            </li>
+                            <li class="product-page__header--item">
+                                <a href="#" class="product-page__header--link light">формованные свечи</a>
+                            </li>
+                            <li class="product-page__header--item">
+                                <span class="product-page__header--product light">ЩЕЛКУНЧИК</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="javascript:history.back()" class="product-page__back-link light">
+                        <span class="product-page__back-link--text">вернуться назад</span>
+                        <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="product-page__back-link--icon"
+                        >
+                            <path d="M18.7791 6.49081C18.3929 6.08659 17.9337 5.76629 17.4281 5.54843C16.9224 5.33057 16.3804 5.21949 15.8333 5.22161H2.33331L5.91664 1.48354C6.07268 1.32008 6.16007 1.09864 6.1596 0.867959C6.15914 0.637273 6.07084 0.41623 5.91414 0.253457C5.75744 0.0906833 5.54518 -0.000487126 5.32404 1.95765e-06C5.1029 0.000491042 4.89101 0.0925996 4.73497 0.256065L0.609972 4.55832C0.219407 4.96587 0 5.51856 0 6.09483C0 6.67111 0.219407 7.2238 0.609972 7.63135L4.73497 11.9353C4.81234 12.0163 4.90424 12.0805 5.00541 12.1244C5.10659 12.1683 5.21506 12.191 5.32463 12.1912C5.4342 12.1913 5.54273 12.169 5.64402 12.1254C5.74532 12.0818 5.83738 12.0178 5.91497 11.9371C5.99256 11.8564 6.05415 11.7605 6.09623 11.655C6.1383 11.5494 6.16004 11.4363 6.16019 11.322C6.16035 11.2077 6.13892 11.0944 6.09713 10.9888C6.05534 10.8831 5.99401 10.7871 5.91664 10.7061L2.32331 6.96024H15.8333C16.4964 6.96024 17.1322 7.235 17.6011 7.72409C18.0699 8.21318 18.3333 8.87652 18.3333 9.56819V15.6534C18.3333 16.3451 18.0699 17.0084 17.6011 17.4975C17.1322 17.9866 16.4964 18.2614 15.8333 18.2614H4.16664C3.94563 18.2614 3.73366 18.353 3.57738 18.516C3.4211 18.679 3.33331 18.9001 3.33331 19.1307C3.33331 19.3612 3.4211 19.5824 3.57738 19.7454C3.73366 19.9084 3.94563 20 4.16664 20H15.8333C16.938 19.9986 17.997 19.5402 18.7781 18.7254C19.5592 17.9105 19.9987 16.8058 20 15.6534V9.56819C20.0018 8.99649 19.8949 8.43008 19.6853 7.90182C19.4757 7.37357 19.1677 6.89396 18.7791 6.49081Z" fill="white"></path>
+                        </svg>
+                    </a>
+                    <h1 class="product-page__header--title">
+                        <span data-js-category-product-page="">формованная свеча</span>
+                        <span data-js-name-product-page="">ЩЕЛКУНЧИК</span>
+                    </h1>
+                </section>
+                <section class="product-page__content">
+                    <div class="slider-product">
+                        <div class="slider-product__main--wrapper" data-image="[&quot;./assets/img/product-image/image1.webp&quot;,&quot;./assets/img/product-image/image2.webp&quot;,&quot;./assets/img/product-image/image3.webp&quot;,&quot;./assets/img/product-image/image4.webp&quot;]">
+                            <div class="slider-product__btn--wrapper">
+                                <button class="slider-product__btn--back slider-product__btn" aria-label="Предыдущее изображение" type="button">
+                                    <svg
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 34 38"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="slider-product__btn--icon"
+                                    >
+                                        <path d="M0.00976563 18.8795C-0.105802 17.0438 0.798116 15.2131 2.49902 14.2311L25.9863 0.670532C28.3776 -0.709965 31.4356 0.109539 32.8164 2.50061C34.1971 4.89202 33.3777 7.94993 30.9863 9.33069L14.4482 18.8795L30.9863 28.4274C33.3777 29.808 34.1969 32.866 32.8164 35.2574C31.4357 37.6488 28.3778 38.4682 25.9863 37.0875L2.49902 23.527C0.798355 22.545 -0.105603 20.715 0.00976563 18.8795Z" fill="black"></path>
+                                    </svg>
+                                </button>
+                                <button class="slider-product__btn--forward slider-product__btn" aria-label="Следующее изображение" type="button">
+                                    <svg
+                                        width="1em"
+                                        height="1em"
+                                        viewBox="0 0 34 38"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="slider-product__btn--icon"
+                                    >
+                                        <path d="M33.4775 18.8795C33.5931 17.0438 32.6892 15.2131 30.9883 14.2311L7.50098 0.670532C5.10968 -0.709965 2.0517 0.109539 0.670898 2.50061C-0.709782 4.89202 0.109638 7.94993 2.50098 9.33069L19.0391 18.8795L2.50098 28.4274C0.109592 29.808 -0.709621 32.866 0.670898 35.2574C2.05164 37.6488 5.10954 38.4682 7.50098 37.0875L30.9883 23.527C32.6889 22.545 33.5929 20.715 33.4775 18.8795Z" fill="black"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="slider-product__gallery"></div>
+                    </div>
+                    <article class="product-description">
+                        <header class="product-description__header light" data-product-header="">
+                            <div class="product-description__header--top">
+                                <div class="product-description__item">
+                                    <span class="product-description__term light">наименование</span>
+                                    <span class="product-description__meaning light" data-js-name-description="">формованная свеча ЩЕЛКУНЧИК</span>
+                                </div>
+                                <div class="product-description__item">
+                                    <span class="product-description__term light">артикул</span>
+                                    <span class="product-description__meaning light" data-js-article-description="">FS243</span>
+                                </div>
+                                <div class="product-description__item">
+                                    <span class="product-description__term light">количество</span>
+                                    <div class="product-description__counter">
+                                        <button class="product-description__counter--btn light">
+                                            <svg
+                                                width="1em"
+                                                height="1em"
+                                                viewBox="0 0 16 2"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="product-description__counter--icon description-counter-minus light"
+                                                type="button"
+                                            >
+                                                <path d="M15 0C15.5523 0 16 0.447715 16 1C16 1.55228 15.5523 2 15 2H1C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0H15Z" fill="black"></path>
+                                            </svg>
+                                        </button>
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            id="counter-discription-value"
+                                            class="product-description__counter--input light"
+                                            value="1"
+                                        >
+                                        <button class="product-description__counter--btn light" type="button">
+                                            <svg
+                                                width="1em"
+                                                height="1em"
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="product-description__counter--icon description-counter-plus light"
+                                            >
+                                                <path d="M8 0C8.55229 0 9 0.447715 9 1V7H15C15.5523 7 16 7.44772 16 8C16 8.55229 15.5523 9 15 9H9V15C9 15.5523 8.55229 16 8 16C7.44772 16 7 15.5523 7 15V9H1C0.447715 9 0 8.55229 0 8C0 7.44772 0.447715 7 1 7H7V1C7 0.447715 7.44772 0 8 0Z" fill="white"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-description__item ">
+                                    <span class="product-description__term light">цена</span>
+                                    <span class="product-description__meaning light" data-js-price-description="">1999 руб</span>
+                                </div>
+                                <div class="product-description__item">
+                                    <span class="product-description__term light">итоговая цена</span>
+                                    <span class="product-description__meaning light" data-js-total-description="">19999 руб</span>
+                                </div>
+                            </div>
+                            <div class="product-description__header--bottom">
+                                <button class="product-description__baskets" type="button" data-js-btn-description="">ДОБАВИТЬ В КОРЗИНУ</button>
+                            </div>
+                        </header>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <footer class="footer container">
+            <div class="footer__container">
+                <nav class="footer__nav">
+                    <h2 class="footer__title">Клиенту</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Главная</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Блог</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Доставка и оплата</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <h2 class="footer__title">Продукция</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Формованные</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Сезонные свечи</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Диффузоры</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Аромасаше</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <h2 class="footer__title">Соц. сети</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <span class="footer__link--text">Telegram</span>
+                                <svg
+                                    width="1em"
+                                    height="1em"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="footer__link--icon"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M32 16C32 24.8365 24.8365 32 16 32C7.16347 32 0 24.8365 0 16C0 7.16347 7.16347 0 16 0C24.8365 0 32 7.16347 32 16ZM10.7143 14.5343C9.11153 15.2341 7.46473 15.9532 5.95883 16.7827C5.17251 17.3584 6.21759 17.7657 7.19807 18.1477C7.35393 18.2084 7.50813 18.2685 7.65313 18.3285C7.7738 18.3656 7.89647 18.4047 8.0208 18.4443C9.11127 18.7917 10.3271 19.1791 11.3858 18.5963C13.1249 17.5973 14.766 16.4424 16.4059 15.2883C16.9432 14.9102 17.4803 14.5322 18.0207 14.1598C18.0461 14.1436 18.0746 14.1251 18.1059 14.1049C18.5662 13.8064 19.6016 13.1353 19.2186 14.0601C18.313 15.0505 17.3429 15.9271 16.3677 16.8087C15.7103 17.4027 15.0506 17.999 14.4066 18.6337C13.8457 19.0894 13.2633 20.0059 13.8913 20.6441C15.3379 21.6567 16.8071 22.6449 18.2755 23.6325C18.7533 23.9538 19.2311 24.2751 19.7079 24.5973C20.516 25.2425 21.779 24.7205 21.9567 23.7123C22.0357 23.2485 22.115 22.7848 22.1943 22.321C22.6327 19.7579 23.0713 17.1938 23.4587 14.6223C23.5113 14.2189 23.571 13.8156 23.6307 13.4121C23.7755 12.434 23.9204 11.4547 23.9657 10.4714C23.849 9.49007 22.6591 9.70587 21.997 9.92653C18.5935 11.2216 15.2241 12.6127 11.8679 14.0283C11.4877 14.1967 11.1023 14.3649 10.7143 14.5343Z"
+                                        fill="white"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <h2 class="footer__title">Документы</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Политка конфиденциальности</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Публичная оферта</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Пользовательское соглашение</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">О cookie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <script src="./assets/main.js"></script>
+    </body>
+</html>
